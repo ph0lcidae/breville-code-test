@@ -8,7 +8,7 @@ The actual function to deduplicate is in `dedupe.js` -- JavaScript's `Set` objec
 
 This repository depends on faker.js to generate fake emails.
 
-See terminal output for running time:
+See terminal output for running time, inclusive of test dataset generation:
 ```
 breville-code-test on  main [?] via  v14.18.1
 ❯ time node dedupe-test.js
