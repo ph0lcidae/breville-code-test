@@ -7,6 +7,7 @@ module.exports = {
   },
 
   generate: () => {
+    // creates a set of 5 fake emails to interleave as duplicates
     arr = [];
     duplicates = [];
     for (i = 0; i < 5; i++) {
@@ -15,6 +16,7 @@ module.exports = {
 
     for (i = 0; i < 100000; i++) {
       if (i % 2 == 0) {
+        // interleave generated duplicates every other entry
         arr.push(duplicates[i%5]);
       } else {
         arr.push(faker.internet.email());
